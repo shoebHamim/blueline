@@ -1,0 +1,29 @@
+@keyframes flicker {
+  0%,
+  18%,
+  22%,
+  25%,
+  53%,
+  57%,
+  100% {
+      text-shadow: 0 0 0px #4d62d3, 0 0 0px #4d62d3, 0 0 15px #4d62d3;
+  }
+  20%,
+  24%,
+  55% {
+      text-shadow: none;
+  }
+}
+@keyframes glow {
+  from {
+      text-shadow: 0 0 0px #4d62d3, 0 0 0px #4666FF;
+  }
+
+  to {
+      text-shadow: 0 0 5px #4666FF, 0 0 5px #4666FF;
+  }
+}
+
+.glow {
+  animation: flicker 2s infinite alternate;
+}
